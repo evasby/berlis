@@ -1,0 +1,32 @@
+.mypager{
+	display: block;
+	float: left;
+	padding: 17px 0px 40px 74px;
+	&_list{
+		position: relative;
+	}
+	&_item{
+		margin: 0px;
+		padding: 0px;
+		display: inline-block;
+		font-size: 18px;
+		color: #262626;
+		&__current{
+			background-color: #c9c9c9;
+			padding: 2px 3px 3px 3px;
+		}
+		&__first{
+			margin-right: 12px;
+		}
+		a{
+			@include def-link-colors(#262626, #262626, #262626, #262626, #262626);
+			text-decoration: none;
+			font-size: 18px;
+		}
+		.ajax-progress{
+			position: absolute;
+			top: 3px;
+			right: -20px;
+		}
+	}
+}

@@ -1,0 +1,24 @@
+.header{
+  position: relative;
+  background-color: #262626;
+  padding: 60px 65px 47px 65px;
+  color: #ffffff;
+  overflow: hidden;
+  &_phone{
+    width: 187px;
+    margin: 0px 0px 0px 35px;
+    font-size: 24px;
+    line-height: 1.1;
+    float: left;
+    letter-spacing: 0.8px;
+  }
+  &_slang{
+    width: 436px;
+    margin: -8px 0px 0px 178px;
+    text-transform: uppercase;
+    font-size: 36px;
+    float: left;
+    text-align: center;
+    letter-spacing: 1.4px;
+  }
+}

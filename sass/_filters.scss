@@ -1,0 +1,37 @@
+.filters{
+	float: right;
+	position: relative;
+	padding: 17px 74px 40px 0px;
+	.ajax-progress{
+		position: absolute;
+		top: 20px;
+		right: 50px;
+	}
+	label{
+		color: #262626;
+		font-size: 18px;
+		display: inline;
+		font-weight: normal;
+	}
+	.bef-select-as-links{
+		display: inline-block;
+	}
+	.form-type-bef-link{
+		display: inline-block;
+	}
+	a{
+		text-decoration: none;
+		font-size: 18px;
+		margin-left: 8px;
+		@include def-link-colors(#262626, #262626, #262626, #262626, #262626);
+		&.active{
+			@include def-link-colors(#c80017, #c80017, #c80017, #c80017, #c80017);
+		}
+	}
+	.views-exposed-widgets {
+	    margin-bottom: 0px;
+	}
+	.views-exposed-form .views-exposed-widget {
+		padding: 0px;
+	}
+}

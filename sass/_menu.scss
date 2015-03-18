@@ -1,0 +1,59 @@
+.menu {
+    &_list{
+        display: table;
+        width: 100%;
+        background: #303030;
+        &__l2{
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            top: 62px;
+            left: -1px;
+            margin-right: -2px;
+            z-index: 1;
+            @include translate(20px, 20px);
+            @include def-transition(all, 0.2s, ease-in-out);
+            .menu_item:hover & {
+                @include translate(0px, 0px);
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+    &_item{
+        display: table-cell;
+        position: relative;
+        &__l2{
+            display: block;
+        }
+    }
+    &_link{
+        font-size: 22px;
+        @include def-link-colors(#ffffff, #ffffff, #ffffff, #ffffff, #ffffff);
+        text-decoration: none;
+        display: block;
+        padding: 20px 33px 20px 30px;
+        text-align: center;
+        &__l2{
+            font-size: 16px;
+            padding: 10px 5px 10px 10px;
+        }
+        &:hover{
+            background-color: #3f3f3f;
+        }
+        &__active{
+            position: relative;
+            background-color: #c80017;
+            &:after{
+                content: "";
+                display: block;
+                position: absolute;
+                right: 10px;
+                top: 40%;
+                width: 17px;
+                height: 17px;
+                background: url('../image/arrowd-m.png') no-repeat;
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.project{
+	background-color: #ffffff;
+	padding: 18px 0px 0px 0px;
+	&_title{
+		background-color: #3f3f3f;
+		font-size: 30px;
+		color: #ffffff;
+		padding: 16px 0px 16px 42px;
+	}
+	&_item{
+		float: left;
+		margin: 0px 13px 13px 0px;
+		@include def-transition(outline-offset, 0.3s);
+		&:hover{
+			outline: 11px solid rgba(71, 71, 71, .6);
+	  		outline-offset: -11px;
+	  	}
+		img{
+			display: block;
+		}		
+	}
+	&_wrap{
+		padding: 23px 0px 10px 64px;
+		overflow: hidden;
+	}
+}

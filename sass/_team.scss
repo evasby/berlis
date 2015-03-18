@@ -1,0 +1,18 @@
+.team{
+  background-color: #ffffff;
+  overflow: hidden;
+  padding: 48px 0px 0px 52px;
+  h1{
+    text-transform: uppercase;
+    padding: 0px 0px 36px 13px;
+  }
+  &_item{
+    width: 360px;
+    float: left;
+    margin-right: 37px;
+    min-height: 365px;
+  }
+  &_text{
+    padding: 20px 0px 0px 10px;
+  }
+}

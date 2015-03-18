@@ -1,0 +1,58 @@
+@import "mymix";
+@import "fonts";
+$font: 'PT Sans';
+$font_color: #ffffff;
+$font_color_a_hover: #f26422;
+$font_size: 15px;
+/**********************************************************/
+/**********************************************************/
+/*@font-face {
+    font-family: 'open_sanslight';
+    src: url('../font/opensanslight.eot');
+    src: url('../font/opensanslight.eot?#iefix') format('embedded-opentype'),
+         url('../font/opensanslight.woff2') format('woff2'),
+         url('../font/opensanslight.woff') format('woff'),
+         url('../font/opensanslight.ttf') format('truetype'),
+         url('../font/opensanslight.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}*/
+body{
+  background: url('../image/bac.jpg') #5c5c5c;
+  font-family: 'PT Sans';
+  font-size: 22px;
+  color: #262626;
+}
+h1{
+  font-size: 36px;
+}
+.inner {
+  max-width: 1260px;
+  margin: 0 auto;
+  min-width: 285px;
+  @include old-ie{
+    min-width: 1260px;
+  }
+}
+
+@import "messages";
+@import "tabs";
+@import "header";
+@import "logo";
+@import "menu";
+@import "slide";
+@import "slider";
+@import "frontitem";
+@import "person";
+@import "article";
+@import "project";
+@import "contacts";
+@import "gallery";
+@import "mypager";
+@import "filters";
+@import "team";
+@import "clients";
+@import "footer";
+@import "form";
+@import "webformat";

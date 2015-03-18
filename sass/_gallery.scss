@@ -1,0 +1,43 @@
+.gallery{
+  background-color: #ffffff;
+  padding-top: 18px;
+  overflow: hidden;
+  &_header{
+    background-color: #3f3f3f;
+    font-size: 30px;
+    color: #ffffff;
+    padding: 12px 0px 17px 43px;
+    margin-bottom: 23px;
+  }
+  &_item{
+    overflow: hidden;
+    padding: 0px 0px 23px 0px;
+  }
+  &_left{
+    float: left;
+    width: 33.6%;
+    a{
+      display: block;
+      padding: 0px 0px 0px 64px;
+    }
+    img{
+      display: block;
+    }
+  }
+  &_right{
+    float: left;
+    width: 66.4%;
+  }
+  &_top{
+    padding: 5px 26px 0px 26px;
+    font-size: 30px;
+  }
+  &_bottom{
+    padding: 20px 26px 0px 26px;
+    font-size: 22px;
+    line-height: 1.25;
+  }
+  &_link{
+    @include def-link-colors(#e2001a, #e2001a, #e2001a, #e2001a, #e2001a);
+  }
+}

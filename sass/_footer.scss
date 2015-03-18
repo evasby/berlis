@@ -1,0 +1,36 @@
+.footer{
+  background-color: #262626;
+  overflow: hidden;
+  &_title{
+    color: #ffffff;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    padding: 19px 0 19px 0;
+    background-color: #c80017;
+  }
+  &_arrow{
+    display: inline-block;
+    font-size: 20px;
+    width: 23px;
+    height: 19px;
+    background: url('../image/arrowd.png') no-repeat;
+    position: relative;
+    top: 2px;
+  }
+  &_wrap{
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 50px;
+  }
+  &_slang{
+    width: 522px;
+    float: left;
+    margin: 0px 0px 0px 97px;
+    color: #ffffff;
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1.5px;
+  }
+}
