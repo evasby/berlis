@@ -143,23 +143,23 @@ h1 {
 .header {
   position: relative;
   background-color: #262626;
-  padding: 60px 65px 47px 65px;
+  padding: 60px 0px 47px 40px;
   color: #ffffff;
   overflow: hidden;
 }
 .header_phone {
-  width: 187px;
-  margin: 0px 0px 0px 35px;
+  width: 350px;
+  margin: 3px 0px 0px 50px;
   font-size: 24px;
   line-height: 1.1;
   float: left;
   letter-spacing: 0.8px;
 }
 .header_slang {
-  width: 436px;
-  margin: -8px 0px 0px 178px;
+  width: 522px;
+  margin: -3px 0px 0px 50px;
   text-transform: uppercase;
-  font-size: 36px;
+  font-size: 34px;
   float: left;
   text-align: center;
   letter-spacing: 1.4px;
@@ -307,17 +307,14 @@ h1 {
   left: 0px;
   opacity: 0;
   background: url(../image/sliders.png) #ffffff no-repeat -169px 0px;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 .slider_item:hover .slider_image__red {
   opacity: 1;
-}
-.slider_item:hover .slider_image__2 .slider_image__red {
-  opacity: 0;
 }
 .slider_image__1 .slider_image__red {
   background-position: -169px -160px;
@@ -338,6 +335,14 @@ h1 {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 4px;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+.slider_item:hover .slider_head {
+  color: #c80017;
 }
 .slider_descr {
   color: #3f3f3f;
@@ -670,6 +675,27 @@ h1 {
 .galleria-theme-classic.galleria-container.videoplay .galleria-info,
 .galleria-theme-classic.galleria-container.videoplay .galleria-counter {
   display: none !important;
+}
+
+.galleria-lightbox-prevholder {
+  cursor: pointer !important;
+  position: absolute !important;
+  z-index: 99999 !important;
+  height: 100px !important;
+  margin-top: -70px !important;
+  top: 50% !important;
+  width: 100px !important;
+}
+
+.galleria-lightbox-nextholder {
+  cursor: pointer !important;
+  position: absolute !important;
+  right: -1px !important;
+  z-index: 99999 !important;
+  height: 100px !important;
+  margin-top: -70px !important;
+  top: 50% !important;
+  width: 100px !important;
 }
 
 .person {
@@ -1251,7 +1277,7 @@ h1 {
   float: left;
   margin: 0px 0px 0px 97px;
   color: #ffffff;
-  font-size: 36px;
+  font-size: 34px;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 1.5px;

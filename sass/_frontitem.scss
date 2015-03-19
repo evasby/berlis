@@ -269,3 +269,22 @@
 }
 .galleria-theme-classic.galleria-container.videoplay .galleria-info,
 .galleria-theme-classic.galleria-container.videoplay .galleria-counter{ display:none!important; }
+.galleria-lightbox-prevholder{
+    cursor: pointer!important;
+    position: absolute!important;
+    z-index: 99999!important;
+    height: 100px!important;
+    margin-top: -70px!important;
+    top: 50%!important;
+    width: 100px!important;
+}
+.galleria-lightbox-nextholder{
+    cursor: pointer!important;
+    position: absolute!important;
+    right: -1px!important;
+    z-index: 99999!important;
+    height: 100px!important;
+    margin-top: -70px!important;
+    top: 50%!important;
+    width: 100px!important;
+}
